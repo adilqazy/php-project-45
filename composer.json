@@ -1,0 +1,20 @@
+{
+    "name": "hexlet/code",
+    "description": "hexlet 1st project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "keep silent",
+            "email": "learn.fllutter@gmail.com"
+        }
+    ],
+    "require": {},
+    "bin": [
+	    "bin/brain-games"
+        ]
+}
