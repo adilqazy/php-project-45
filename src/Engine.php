@@ -25,7 +25,7 @@ function isEven()
             continue;
         }
         line("{$answer} is wrong answer ;(. Correct answer was '{$correct}'.\nLet's try again, {$name}!");
-        return;
+        break;
     }
     if ($count === 3) {
         line("Congratulations, {$name}!");
@@ -56,7 +56,7 @@ function calc()
             $count +=1;
         } else {
             line("{$answer} is wrong answer ;(. Correct answer was {$result}.\nLet's try again, {$name}!");
-            return;
+            break;
         }
     }
     if ($count === 3) {
@@ -148,6 +148,8 @@ function isPrime()
     }
 }
 
+#Блок с обрабатывающими функциями
+
 function gcd(int $a, int $b): int
 {
     while ($b !== 0) {
@@ -172,8 +174,6 @@ function progression()
     return $numbers;
 }
 
-#Блок с обрабатывающими функциями
-
 function getEvenAnswer(int $num): string
 {
     if ($num % 2 === 0) {
@@ -196,6 +196,7 @@ function calculation(int $num1, int $num2, string $operator)
             $result = $num1 * $num2;
             break;
     }
+    return $result;
 }
 
 function prime(int $num): bool
