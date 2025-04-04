@@ -53,7 +53,7 @@ function calc()
 
         if ((int)$answer === $result) {
             line('Correct!');
-            $count +=1;
+            $count += 1;
         } else {
             line("{$answer} is wrong answer ;(. Correct answer was {$result}.\nLet's try again, {$name}!");
             break;
