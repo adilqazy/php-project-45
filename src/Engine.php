@@ -154,10 +154,13 @@ function isPrime()
             line('Correct!');
         } else {
             line('Incorrect!');
+            break;
         }
         $count += 1;
     }
+    if($count === 3){
     line("Congratulations, {$name}!");
+    }
 }
 
 function gcd($a,$b) {
