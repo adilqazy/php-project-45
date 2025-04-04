@@ -157,6 +157,7 @@ function isPrime()
         }
         $count += 1;
     }
+    line("Congratulations, {$name}!");
 }
 
 function gcd($a,$b) {
