@@ -131,6 +131,33 @@ function brainProgression()
     }
 }
 
+function isPrime()
+{
+    $name = greet();
+    $count = 0;
+    line('Answer "yes" if given number is prime. Otherwise answer "no".');
+
+    while($count < 3) {
+
+        $number = rand(1,100);
+        $answer = prompt("Question: {$number}");
+        $check = '';
+
+        if(prime($number)){
+            $check = 'yes';
+        } else {
+            $check = 'no';
+        }
+
+        if($check === $answer){
+            line('Correct!');
+        } else {
+            line('Incorrect!');
+        }
+        $count += 1;
+    }
+}
+
 function gcd($a,$b) {
     return ($a % $b) ? gcd($b,$a % $b) : $b;
 }
@@ -147,4 +174,18 @@ function progression()
         $numbers[] = $currElem;
     }
     return $numbers;
+}
+
+function prime(int $num): bool
+{
+    if ($num <= 1) return false;
+    if ($num === 2) return true;
+    if ($num % 2 === 0) return false;
+
+    $limit = (int) sqrt($num);
+
+    for ($i = 3; $i <= $limit; $i += 2) {
+        if ($num % $i === 0) return false;
+    }
+    return true;
 }
