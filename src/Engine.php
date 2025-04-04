@@ -26,7 +26,7 @@ function isEven()
             line("{$answer} is wrong answer ;(. Correct answer was 'no'. Let's try again, {$name}!");
             break;
         } elseif($answer === 'no') {
-            line("{$answer} is wrong answer ;(. Correct answer was 'yes'. Let's try again, {$name}!");
+            line("{$answer} is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {$name}!");
             break;
         }
     }
@@ -68,9 +68,41 @@ function calc()
             line('Correct!');
             $count += 1;
         } else {
-            line("{$answer} is wrong answer ;(. Correct answer was {$result}. Let's try again, {$name}!");
+            line("{$answer} is wrong answer ;(. Correct answer was {$result}.\nLet's try again, {$name}!");
             break;
         }
+        if ($count === 3){
+        line("Congratulations, {$name}");
+        }
     }
+}
 
+function findGcd()
+{
+    $name = greet();
+    $count = 0;
+    line('Find the greatest common divisor of given numbers.');
+
+    for($i = 0; $i < 3; $i++){
+        
+        $num1 = rand(1,20);
+        $num2 = rand(1,20);
+        line("Question: {$num1} {$num2}");
+        $gcd = ($num1 % $num2) ? gcd($num2,$num1 % $num2) : $num2;
+        $answer = prompt('Your answer');
+        
+        if((int)$answer === $gcd){
+            line('Correct!');
+        } else {
+            line("{$answer} is wrong answer ;(. Correct answer was {$gcd}.\n Let's try again, {$name}!");
+            break;
+        }
+        if ($count === 3){
+        line("Congratulations, {$name}");
+        }
+    }
+}
+
+function gcd($a,$b) {
+    return ($a % $b) ? gcd($b,$a % $b) : $b;
 }

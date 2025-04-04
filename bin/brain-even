@@ -1,9 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-use function cli\line;
-use function cli\prompt;
-use function PhpProject\Cli\greet;
 use function PhpProject\Engine\isEven;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
