@@ -185,6 +185,7 @@ function getEvenAnswer(int $num): string
 
 function calculation(int $num1, int $num2, string $operator)
 {
+    $result = 0;
     switch ($operator) {
         case '+':
             $result = $num1 + $num2;
