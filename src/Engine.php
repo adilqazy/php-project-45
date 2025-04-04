@@ -31,7 +31,7 @@ function isEven()
         }
     }
     if ($count === 3){
-    line("Congratulations, {$name}");
+    line("Congratulations, {$name}!");
     }
 }
 
@@ -72,7 +72,7 @@ function calc()
             break;
         }
         if ($count === 3){
-        line("Congratulations, {$name}");
+        line("Congratulations, {$name}!");
         }
     }
 }
@@ -98,7 +98,7 @@ function findGcd()
             break;
         }
         if ($count === 3){
-        line("Congratulations, {$name}");
+        line("Congratulations, {$name}!");
         }
     }
 }
@@ -126,7 +126,7 @@ function brainProgression()
             break;
         }
         if($count === 3){
-            line("Congratulations, {$name}");
+            line("Congratulations, {$name}!");
         }
     }
 }
