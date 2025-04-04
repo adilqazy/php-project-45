@@ -16,19 +16,15 @@ function isEven()
         $num = rand(1, 100);
         line("Question: {$num}");
         $answer = strtolower(prompt('Your answer'));
-        if ($num % 2 === 0 && $answer === 'yes') {
+
+        $correct = getEvenAnswer($num);
+
+        if ($correct === $answer) {
             line('Correct!');
-            $count += 1;
-        } elseif ($num % 2 !== 0 && $answer === 'no') {
-            line('Correct!');
-            $count += 1;
-        } elseif ($answer === 'yes') {
-            line("{$answer} is wrong answer ;(. Correct answer was 'no'. Let's try again, {$name}!");
-            break;
-        } elseif ($answer === 'no') {
-            line("{$answer} is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {$name}!");
-            break;
+            continue;
         }
+        line("{$answer} is wrong answer ;(. Correct answer was '{$correct}'.\nLet's try again, {$name}!");
+        return;
     }
     if ($count === 3) {
         line("Congratulations, {$name}!");
@@ -47,33 +43,23 @@ function calc()
         $num1 = rand(1, 30);
         $num2 = rand(1, 30);
         $randSymbol = $symbols[$randKey];
-        $equation = "{$num1} {$randSymbol} {$num2}";
 
+        $equation = "{$num1} {$randSymbol} {$num2}";
         line("Question: {$equation}");
 
         $answer = strtolower(prompt('Your answer'));
+        $result = calculation($num1, $num2, $randSymbol);
 
-        switch ($randSymbol) {
-            case '+':
-                $result = $num1 + $num2;
-                break;
-            case '-':
-                $result = $num1 - $num2;
-                break;
-            case '*':
-                $result = $num1 * $num2;
-                break;
-        }
         if ((int)$answer === $result) {
             line('Correct!');
-            $count += 1;
+            $count +=1;
         } else {
             line("{$answer} is wrong answer ;(. Correct answer was {$result}.\nLet's try again, {$name}!");
-            break;
+            return;
         }
-        if ($count === 3) {
-            line("Congratulations, {$name}!");
-        }
+    }
+    if ($count === 3) {
+        line("Congratulations, {$name}!");
     }
 }
 
@@ -183,6 +169,32 @@ function progression()
         $numbers[] = $currElem;
     }
     return $numbers;
+}
+
+#Блок с обрабатывающими функциями
+
+function getEvenAnswer(int $num): string
+{
+    if ($num % 2 === 0) {
+        return 'yes';
+    }
+
+    return 'no';
+}
+
+function calculation(int $num1, int $num2, string $operator)
+{
+    switch ($operator) {
+        case '+':
+            $result = $num1 + $num2;
+            break;
+        case '-':
+            $result = $num1 - $num2;
+            break;
+        case '*':
+            $result = $num1 * $num2;
+            break;
+    }
 }
 
 function prime(int $num): bool
