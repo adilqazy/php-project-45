@@ -161,9 +161,14 @@ function isPrime()
     }
 }
 
-function gcd(int $a, int $b)
+function gcd(int $a, int $b): int
 {
-    return ($a % $b) ? gcd($b, $a % $b) : $b;
+    while ($b !== 0) {
+        $temp = $b;
+        $b = $a % $b;
+        $a = $temp;
+    }
+    return $a;
 }
 
 function progression()
