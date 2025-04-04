@@ -93,6 +93,7 @@ function findGcd()
         
         if((int)$answer === $gcd){
             line('Correct!');
+            $count += 1;
         } else {
             line("{$answer} is wrong answer ;(. Correct answer was {$gcd}.\n Let's try again, {$name}!");
             break;
