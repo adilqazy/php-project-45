@@ -5,3 +5,4 @@
 [![Demo](https://asciinema.org/a/HWNqiJR8xYTOPVvC15tXIjkat)]
 [![Demo Calc](https://asciinema.org/a/IWshNlwMggrsraoXwZMGvOmsp)]
 [![Demo GCD](https://asciinema.org/a/tTpLMKFt656JGGo6YcNQuzMha)]
+[![Demo Progression](https://asciinema.org/a/QUiXCtgqF7mTGzxJR7lgH3Bdn)]
