@@ -87,7 +87,7 @@ function findGcd()
         $num1 = rand(1, 20);
         $num2 = rand(1, 20);
         line("Question: {$num1} {$num2}");
-        $gcd = ($num1 % $num2) ? gcd($num2, $num1 % $num2) : $num2;
+        $gcd = gcd($num1, $num2);
         $answer = prompt('Your answer');
 
         if ((int)$answer === $gcd) {
@@ -161,7 +161,7 @@ function isPrime()
     }
 }
 
-function gcd($a, $b)
+function gcd(int $a,int $b)
 {
     return ($a % $b) ? gcd($b, $a % $b) : $b;
 }
