@@ -153,7 +153,7 @@ function isPrime()
         if($check === $answer){
             line('Correct!');
         } else {
-            line("Incorrect!\nLet's try again, {$name}");
+            line("Incorrect!\nLet's try again, {$name}!");
             break;
         }
         $count += 1;
