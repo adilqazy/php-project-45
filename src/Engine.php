@@ -154,7 +154,7 @@ function isPrime()
             line('Correct!');
         } else {
             line("Incorrect!\nLet's try again, {$name}");
-            continue;
+            break;
         }
         $count += 1;
     }
