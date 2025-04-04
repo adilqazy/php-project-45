@@ -21,6 +21,7 @@ function isEven()
 
         if ($correct === $answer) {
             line('Correct!');
+            $count += 1;
             continue;
         }
         line("{$answer} is wrong answer ;(. Correct answer was '{$correct}'.\nLet's try again, {$name}!");
