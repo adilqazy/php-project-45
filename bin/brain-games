@@ -12,6 +12,4 @@ if (file_exists($autoloadPath1)) {
 
 use function PhpProject\Cli\greet;
 
-line('Welcome to the Brain Game!');
-//greet();
-
+greet();
