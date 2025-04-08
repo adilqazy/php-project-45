@@ -4,7 +4,7 @@
 ---
 
 ### Чтобы поиграть:
-make **brain-games** \n
+make **brain-games**
 make **brain-even**
 make **brain-gcd**
 make **brain-prime**

@@ -18,7 +18,7 @@ function gcd(int $a, int $b): int
     return $a;
 }
 
-function progression()
+function progression(): array
 {
     $numbers = [];
     $indexCount = rand(5, 10);
@@ -41,7 +41,7 @@ function getEvenAnswer(int $num): string
     return 'no';
 }
 
-function calculation(int $num1, int $num2, string $operator)
+function calculation(int $num1, int $num2, string $operator): int
 {
     $result = 0;
     switch ($operator) {
