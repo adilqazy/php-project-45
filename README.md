@@ -1,4 +1,4 @@
-# Heading Brain Games.
+# Brain Games.
 
 ---
 
@@ -6,8 +6,8 @@
 
 ---
 
-### Heading 4 Чтобы поиграть:
-make **brain-games**
+### Чтобы поиграть:
+make **brain-games** \n
 make **brain-even**
 make **brain-gcd**
 make **brain-prime**
