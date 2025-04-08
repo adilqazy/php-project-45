@@ -3,12 +3,10 @@
     "description": "hexlet 1st project",
     "license": "MIT",
     "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src"
-        },
         "files": [
             "src/Cli.php",
-            "src/Engine.php"
+            "src/Engine.php",
+            "src/Games"
         ]
     },
     "authors": [
