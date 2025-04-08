@@ -1,6 +1,4 @@
-### Hexlet tests and linter status:
-# Heading
-Brain Games.
+# Heading Brain Games.
 
 ---
 
@@ -8,14 +6,14 @@ Brain Games.
 
 ---
 
-### Heading 4
-Чтобы поиграть:
+### Heading 4 Чтобы поиграть:
 make **brain-games**
 make **brain-even**
 make **brain-gcd**
 make **brain-prime**
 make **brain-progression**
 
+### Hexlet tests and linter status:
 [![Actions Status](https://github.com/adilqazy/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/adilqazy/php-project-45/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c366048874fde8ce9587/maintainability)](https://codeclimate.com/github/adilqazy/php-project-45/maintainability)
 [![Demo](https://asciinema.org/a/HWNqiJR8xYTOPVvC15tXIjkat)]
