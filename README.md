@@ -24,39 +24,37 @@
 
 1. Клонируйте репозиторий:
 
-   ```bash
+   ```
    git clone https://github.com/adilqazy/php-project-45.git
    ```
 2. Перейдите в директорию проекта:
 
-      ```bash
-    Копировать
-    Редактировать
+      ```
     cd php-project-45
       ```
 
 3. Установите зависимости через Composer:
 
-    ```bash
+    ```
       composer install
     ```
 
 ### Игры
 В проект входят следующие игры:
 
-* make brain-games	Приветствие
-* make brain-even	Определите, чётное ли число
-* make brain-gcd	Найдите наибольший общий делитель
-* make brain-prime	Простое ли это число?
-* make brain-progression	Найдите пропущенное число в арифметической прогрессии
+* **make brain-games**	Приветствие
+* **make brain-even**	Определите, чётное ли число
+* **make brain-gcd**	Найдите наибольший общий делитель
+* **make brain-prime**	Простое ли это число?
+* **make brain-progression**	Найдите пропущенное число в арифметической прогрессии
 
 ### Примеры запуска
-    
-      ```bash
-      make brain-even
-      make brain-gcd
-      make brain-prime
-      ```
+
+```
+    make brain-even
+    make brain-gcd
+    make brain-prime
+```
 
 ## Demo
 ### Demo
