@@ -5,9 +5,8 @@ namespace PhpProject\Games\GameProgression;
 use function cli\line;
 use function cli\prompt;
 use function PhpProject\Cli\greet;
-use function PhpProject\Engine\progression;
 
-function brainProgression()
+function brainProgression(): void
 {
     $name = greet();
     line('What number is missing in the progression?');
@@ -33,4 +32,18 @@ function brainProgression()
             line("Congratulations, {$name}!");
         }
     }
+}
+
+function progression(): array
+{
+    $numbers = [];
+    $indexCount = rand(5, 10);
+    $step = rand(1, 5);
+    $startNum = rand(1, 30);
+
+    for ($i = 0; $i <= $indexCount; $i++) {
+        $currElem = $startNum + $i * $step;
+        $numbers[] = $currElem;
+    }
+    return $numbers;
 }

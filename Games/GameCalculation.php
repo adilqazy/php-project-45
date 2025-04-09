@@ -5,9 +5,8 @@ namespace PhpProject\Games\GameCalculation;
 use function cli\line;
 use function cli\prompt;
 use function PhpProject\Cli\greet;
-use function PhpProject\Engine\calculation;
 
-function brainCalculation()
+function brainCalculation(): void
 {
     $name = greet();
     line('What is the result of the expression?');
@@ -37,4 +36,21 @@ function brainCalculation()
     if ($count === 3) {
         line("Congratulations, {$name}!");
     }
+}
+
+function calculation(int $num1, int $num2, string $operator): int
+{
+    $result = 0;
+    switch ($operator) {
+        case '+':
+            $result = $num1 + $num2;
+            break;
+        case '-':
+            $result = $num1 - $num2;
+            break;
+        case '*':
+            $result = $num1 * $num2;
+            break;
+    }
+    return $result;
 }

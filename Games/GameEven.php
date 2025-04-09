@@ -5,9 +5,8 @@ namespace PhpProject\Games\GameEven;
 use function cli\line;
 use function cli\prompt;
 use function PhpProject\Cli\greet;
-use function PhpProject\Engine\getEvenAnswer;
 
-function brainEven()
+function brainEven(): void
 {
     $name = greet();
 
@@ -31,4 +30,13 @@ function brainEven()
     if ($count === 3) {
         line("Congratulations, {$name}!");
     }
+}
+
+function getEvenAnswer(int $num): string
+{
+    if ($num % 2 === 0) {
+        return 'yes';
+    }
+
+    return 'no';
 }

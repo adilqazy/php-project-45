@@ -5,9 +5,8 @@ namespace PhpProject\Games\GameGcd;
 use function cli\line;
 use function cli\prompt;
 use function PhpProject\Cli\greet;
-use function PhpProject\Engine\gcd;
 
-function brainFindGcd()
+function brainFindGcd(): void
 {
     $name = greet();
     $count = 0;
@@ -31,4 +30,14 @@ function brainFindGcd()
             line("Congratulations, {$name}!");
         }
     }
+}
+
+function gcd(int $a, int $b): int
+{
+    while ($b !== 0) {
+        $temp = $b;
+        $b = $a % $b;
+        $a = $temp;
+    }
+    return $a;
 }
