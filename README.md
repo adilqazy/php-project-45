@@ -29,18 +29,16 @@
    ```
 2. Перейдите в директорию проекта:
 
-  ```bash
-Копировать
-Редактировать
-cd php-project-45
-  ```
+      ```bash
+    Копировать
+    Редактировать
+    cd php-project-45
+      ```
 
 3. Установите зависимости через Composer:
 
   ```bash
-Копировать
-Редактировать
-composer install
+    composer install
   ```
 
 ### Игры
@@ -53,24 +51,22 @@ composer install
 * make brain-progression	Найдите пропущенное число в арифметической прогрессии
 
 ### Примеры запуска
-  ```bash
-      Копировать
-      Редактировать
-      make brain-even
-      make brain-gcd
-      make brain-prime
-  ```
+    ```bash
+    make brain-even
+    make brain-gcd
+    make brain-prime
+    ```
 
-### Demo
 ## Demo
+### Demo
 https://asciinema.org/a/HWNqiJR8xYTOPVvC15tXIjkat  
-## Demo Calc
+### Demo Calc
 https://asciinema.org/a/IWshNlwMggrsraoXwZMGvOmsp  
-## Demo GCD
+### Demo GCD
 https://asciinema.org/a/tTpLMKFt656JGGo6YcNQuzMha  
-## Demo Progression
+### Demo Progression
 https://asciinema.org/a/QUiXCtgqF7mTGzxJR7lgH3Bdn  
-## Demo Prime
+### Demo Prime
 https://asciinema.org/a/vX5mqs8382NPuzrnvjuC1JyN2  
 
 ### Лицензия
