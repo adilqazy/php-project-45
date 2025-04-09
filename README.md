@@ -37,9 +37,9 @@
 
 3. Установите зависимости через Composer:
 
-  ```bash
-    composer install
-  ```
+    ```bash
+      composer install
+    ```
 
 ### Игры
 В проект входят следующие игры:
@@ -51,11 +51,12 @@
 * make brain-progression	Найдите пропущенное число в арифметической прогрессии
 
 ### Примеры запуска
-    ```bash
-    make brain-even
-    make brain-gcd
-    make brain-prime
-    ```
+    
+      ```bash
+      make brain-even
+      make brain-gcd
+      make brain-prime
+      ```
 
 ## Demo
 ### Demo
