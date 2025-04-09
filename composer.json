@@ -6,7 +6,11 @@
         "files": [
             "src/Cli.php",
             "src/Engine.php",
-            "src/Games"
+            "Games/GameCalculation.php",
+            "Games/GameEven.php",
+            "Games/GameGcd.php",
+            "Games/GamePrime.php",
+            "Games/GameProgression.php"
         ]
     },
     "authors": [
