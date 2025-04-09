@@ -26,18 +26,22 @@
 
    ```bash
    git clone https://github.com/adilqazy/php-project-45.git
+   ```
 2. Перейдите в директорию проекта:
 
   ```bash
 Копировать
 Редактировать
 cd php-project-45
+  ```
+
 3. Установите зависимости через Composer:
 
   ```bash
 Копировать
 Редактировать
 composer install
+  ```
 
 ### Игры
 В проект входят следующие игры:
@@ -49,13 +53,13 @@ composer install
 * make brain-progression	Найдите пропущенное число в арифметической прогрессии
 
 ### Примеры запуска
-```bash
-Копировать
-Редактировать
-make brain-even
-make brain-gcd
-make brain-prime
-```
+  ```bash
+      Копировать
+      Редактировать
+      make brain-even
+      make brain-gcd
+      make brain-prime
+  ```
 
 ### Demo
 ## Demo
