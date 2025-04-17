@@ -12,16 +12,12 @@ function brainPrime(): void
     $count = 0;
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
 
-    while ($count < 3) {
+    for ($i = 0; $i < 3; $i++) {
         $number = rand(1, 100);
         $answer = prompt("Question: {$number}");
         $check = '';
 
-        if (prime($number)) {
-            $check = 'yes';
-        } else {
-            $check = 'no';
-        }
+        $check = prime($number) ? 'yes' : 'no';
 
         if ($check === $answer) {
             line('Correct!');

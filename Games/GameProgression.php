@@ -13,7 +13,7 @@ function brainProgression(): void
     $count = 0;
 
     for ($i = 0; $i < 3; $i++) {
-        $progression = progression();
+        $progression = makeProgression();
         $indexDot = rand(0, count($progression) - 1);
         $correctNum = $progression[$indexDot];
         $progression[$indexDot] = '..';
@@ -34,7 +34,7 @@ function brainProgression(): void
     }
 }
 
-function progression(): array
+function makeProgression(): array
 {
     $numbers = [];
     $indexCount = rand(5, 10);

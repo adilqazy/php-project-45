@@ -16,7 +16,7 @@ function brainFindGcd(): void
         $num1 = rand(1, 20);
         $num2 = rand(1, 20);
         line("Question: {$num1} {$num2}");
-        $gcd = gcd($num1, $num2);
+        $gcd = getGcd($num1, $num2);
         $answer = prompt('Your answer');
 
         if ((int)$answer === $gcd) {
@@ -32,7 +32,7 @@ function brainFindGcd(): void
     }
 }
 
-function gcd(int $a, int $b): int
+function getGcd(int $a, int $b): int
 {
     while ($b !== 0) {
         $temp = $b;
