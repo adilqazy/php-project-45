@@ -5,14 +5,14 @@ namespace PhpProject\Engine;
 use function cli\line;
 use function PhpProject\Cli\greet;
 
-function runGame(string $task, array $rounds)
+function runGame(string $task, array $rounds): void
 {
     $name = greet();
     line($task);
 
     foreach ($rounds as [$question, $correctAnswer]) {
         line("Question: $question");
-        $answer = strtolower(trim(readline('Your answer: ')));
+        $answer = strtolower(trim((string)readline('Your answer: ')));
 
         if ($answer !== strtolower($correctAnswer)) {
             finishGame(false, $name, $correctAnswer, $answer);
