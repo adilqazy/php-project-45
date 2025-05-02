@@ -5,11 +5,12 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "Games/GameCalculation.php",
-            "Games/GameEven.php",
-            "Games/GameGcd.php",
-            "Games/GamePrime.php",
-            "Games/GameProgression.php"
+            "src/Games/GameCalculation.php",
+            "src/Games/GameEven.php",
+            "src/Games/GameGcd.php",
+            "src/Games/GamePrime.php",
+            "src/Games/GameProgression.php",
+            "src/Engine.php"
         ]
     },
     "authors": [
